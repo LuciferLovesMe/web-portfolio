@@ -6,6 +6,10 @@ import project1 from "../src/assets/projects/project-1.webp";
 import project2 from "../src/assets/projects/project-2.webp";
 import project3 from "../src/assets/projects/project-3.webp";
 import project4 from "../src/assets/projects/project-4.webp";
+import ketosin from "../src/assets/projects/ketosin.png";
+import los from "../src/assets/projects/los.png";
+import actgrow from "../src/assets/projects/actgrow.png";
+import hcs from "../src/assets/projects/hcs.png";
 
 export const HERO_CONTENT = `I am an undergraduate student at State Polytechnic of Jember with a strong passion for software development. I specialize in web development using Next.js, Laravel, ASP.NET, and Express.js, and I am also interested in Android and desktop application development. I enjoy exploring new technologies and continuously improving my skills in these areas.`;
 
@@ -54,21 +58,21 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Human Capital System",
-    image: project1,
+    image: hcs,
     description:
       "A fully functional web app for managing employees and also managing employee's payroll at Bank BPR UMKM Jawa Timur.",
     technologies: ["Laravel", "Accounting", "AJAX", "MySQL"],
   },
   {
     title: "Pincetar",
-    image: project2,
+    image: los,
     description:
       "An application for managing customer's loans at Bank BPR UMKM Jawa Timur.",
     technologies: ["Laravel", "Dynamic Forms", "AJAX", "MySQL"],
   },
   {
     title: "Ketosin",
-    image: project3,
+    image: ketosin,
     description:
       "A platform that aims for chairman of intra-school student organization election at SMKN 1 Bondowoso.",
     technologies: ["Laravel", "MySQL", "REST API", "Android", "Mobile"],
@@ -82,7 +86,7 @@ export const PROJECTS = [
   },
   {
     title: "ActGrow",
-    image: project2,
+    image: actgrow,
     description:
       "An application for connecting farmers and certification institutions.",
     technologies: ["Laravel", "AJAX", "MySQL"],
