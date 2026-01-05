@@ -10,6 +10,9 @@ import ketosin from "../src/assets/projects/ketosin.png";
 import los from "../src/assets/projects/los.png";
 import actgrow from "../src/assets/projects/actgrow.png";
 import hcs from "../src/assets/projects/hcs.png";
+import dimsa from "../src/assets/projects/dimsa.png";
+import helpdesk from "../src/assets/projects/helpdesk.png";
+import management from "../src/assets/projects/management.png";
 
 export const HERO_CONTENT = `I am an undergraduate student at State Polytechnic of Jember with a strong passion for software development. I specialize in web development using Next.js, Laravel, ASP.NET, and Express.js, and I am also interested in Android and desktop application development. I enjoy exploring new technologies and continuously improving my skills in these areas.`;
 
@@ -28,8 +31,37 @@ export const EXPERIENCES = [
       "PostgreSQL",
       "Android",
       "C#.Net",
-      "VB.Net",
       "ASP.Net",
+      "Vue.js",
+      "python",
+      "Express.js",
+    ],
+  },
+  {
+    year: "Aug 2025 - Dec 2025",
+    role: "Intern",
+    company: "PT. Ina Gata Persada (Inagata Technosmith)",
+    description: `Designed and developed web applications using Laravel, PostgreSQL, VueJS.`,
+    technologies: [
+      "HTML",
+      "CSS",
+      "Vue.js",
+      "mySQL",
+      "PostgreSQL",
+      "TailwindCSS",
+    ],
+  },
+  {
+    year: "Feb 2025 - Jul 2025",
+    role: "Intern",
+    company: "Dicoding",
+    description: `Joined as a AI Engineer Bootcamp participant at Coding Camp powered by DBS Foundation and Dicoding.`,
+    technologies: [
+      "Python",
+      "Machine Learning",
+      "Data Science",
+      "AI",
+      "Deep Learning",
     ],
   },
   {
@@ -56,6 +88,25 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "CMS Dimsa",
+    image: dimsa,
+    description: "A Content Management System for Yayasan Dimsa.",
+    technologies: ["Laravel", "REST API", "AJAX", "MySQL", "AlpineJS"],
+  },
+  {
+    title: "Help Desk for Edupongo App",
+    image: helpdesk,
+    description: "A Landing Page for helpdesk Edupongo App.",
+    technologies: ["Bootstrap", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Management Tools",
+    image: management,
+    description:
+      "A Management Tools application look alike Clickup for managing various business processes at Inagata Technosmith.",
+    technologies: ["Laravel", "REST API", "AJAX", "PostgreSQL", "VueJS"],
+  },
   {
     title: "Human Capital System",
     image: hcs,

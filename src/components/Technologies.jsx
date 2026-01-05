@@ -6,7 +6,7 @@ import {
   DiNodejs,
   DiPostgresql,
 } from "react-icons/di";
-import { RiReactjsLine } from "react-icons/ri";
+import { RiReactjsLine, RiVuejsLine } from "react-icons/ri";
 import { SiExpress, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
@@ -46,6 +46,14 @@ const Technologies = () => {
           className="p-4"
         >
           <RiReactjsLine className="text-7xl text-cyan-400" />
+        </motion.div>
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={iconVariants(2.5)}
+          className="p-4"
+        >
+          <RiVuejsLine className="text-7xl text-green-500" />
         </motion.div>
         <motion.div
           className="p-4"
