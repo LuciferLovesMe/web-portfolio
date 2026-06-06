@@ -152,9 +152,6 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address:
-    "Perum Pancoran Mas Blok F-01 Pancoran Village, Bondowoso Subdistrict, Kab. Bondowoso City, East Java.",
-  phoneNo: "+62 8231 4363 3368 ",
   email: "mmalikibrahim666@gmail.com",
 };
 
@@ -162,5 +159,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
