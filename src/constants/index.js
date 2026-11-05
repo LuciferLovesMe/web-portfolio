@@ -1,76 +1,147 @@
-import project1 from "../assets/projects/project-1.webp";
-import project2 from "../assets/projects/project-2.webp";
-import project3 from "../assets/projects/project-3.webp";
-import project4 from "../assets/projects/project-4.webp";
+export const PROFILE = {
+  name: "Maulana Malik Ibrahim",
+  role: "Full Stack Developer",
+  summary:
+    "I build web systems end to end, from database design and backend APIs to the interface people actually use. My focus is Laravel and Next.js applications for business operations such as payroll, loan management, and internal tooling.",
+  location: "Bondowoso, ID",
+  status: "Available for new Oppurtunity",
+  focus: "Business Systems, Web Apps, & AI Dev",
+  timezone: "Asia/Jakarta",
+  email: "mmalikibrahim666@gmail.com",
+  resume: "/cv_maulana.pdf",
+  github: "https://github.com/LuciferLovesMe",
+  linkedin: "https://www.linkedin.com/in/maulana-malik-ibrahim-7b4539216/",
+  instagram: "https://www.instagram.com/abeemm666/",
+};
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const STACK_GROUPS = [
+  {
+    "label": "NLP & Text Systems",
+    "blurb": "Information extraction, text classification, semantic search and domain-specific tokenization pipelines.",
+    "items": [
+      "Python",
+      "Hugging Face",
+      "BERT",
+      "Transformers",
+      "spaCy",
+      "NLTK",
+      "WordPiece",
+      "NER Pipelines"
+    ]
+  },
+  {
+    "label": "Backend & Systems",
+    "blurb": "Resilient services, scalable RESTful APIs and relational database engineering.",
+    "items": [
+      // "Go",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "MySQL",
+      "ASP.Net",
+      "REST APIs",
+      "Query Optimization"
+    ]
+  },
+  {
+    "label": "Frontend Interfaces",
+    "blurb": "Responsive user interfaces, complex state management and reusable design systems.",
+    "items": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      // "Complex State Architecture",
+      // "Client Performance"
+    ]
+  },
+  {
+    "label": "Workflow & QA Testing",
+    "blurb": "Version control discipline, automated CI checks and thorough functional testing.",
+    "items": [
+      "Git Flow",
+      "GitHub Actions (CI)",
+      "Manual System Testing",
+      "Regression Testing",
+      "Postman API Testing"
+    ]
+  }
+];
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
+    period: "May 2022 — Present",
     role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    company: "Freelance",
+    points: [
+      "Designed and developed web, desktop, and Android applications using Next.js, Laravel, C#, and VB.Net.",
+      "Worked closely with frontend developers to integrate backend components.",
+    ],
+    technologies: [
+      "Laravel",
+      "Next.js",
+      "MySQL",
+      "PostgreSQL",
+      "Android",
+      "C#.Net",
+      "ASP.Net",
+      "Vue.js",
+      "Python",
+      "Express.js",
+    ],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    period: "Aug 2025 — Dec 2025",
+    role: "Intern",
+    company: "PT. Ina Gata Persada (Inagata Technosmith)",
+    points: [
+      "Designed and developed web applications using Laravel, PostgreSQL, and VueJS.",
+    ],
+    technologies: ["Vue.js", "Laravel", "MySQL", "PostgreSQL", "TailwindCSS"],
+  },
+  {
+    period: "Feb 2025 — Jul 2025",
+    role: "AI Engineer Bootcamp",
+    company: "Dicoding × DBS Foundation (Coding Camp)",
+    points: [
+      "Participated in the AI Engineer track of Coding Camp powered by DBS Foundation and Dicoding.",
+    ],
+    technologies: ["Python", "Machine Learning", "Data Science", "Deep Learning"],
+  },
+  {
+    period: "Aug 2024 — Dec 2024",
+    role: "Intern",
+    company: "BRIN & Datains",
+    points: ["Designed and developed web applications using Next.js."],
+    technologies: ["Next.js", "MySQL", "PostgreSQL"],
+  },
+  {
+    period: "Oct 2022 — Apr 2024",
+    role: "Backend Developer",
+    company: "PT. Barouk Raya Teknologi",
+    points: [
+      "Developed company web applications using Laravel and MySQL.",
+      "Worked closely with frontend engineers and mobile developers to deliver a fully functional app.",
+    ],
+    technologies: ["Laravel", "REST API", "AJAX", "JavaScript"],
+  },
+  {
+    period: "Jan 2021 — Apr 2021",
+    role: "Intern Backend Developer",
+    company: "JV. Partner Indonesia",
+    points: [
+      "Developed and maintained web applications using Laravel.",
+      "Helped build the TukangIndonesia application.",
+    ],
+    technologies: ["PHP", "Laravel", "AJAX", "MySQL"],
   },
 ];
 
-export const PROJECTS = [
-  {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-  },
-  {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
-  {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  },
+export const CLIENTS = [
+  "Bank BPR UMKM Jawa Timur",
+  "Inagata Technosmith",
+  "BRIN",
+  "Barouk Raya Teknologi",
+  "Yayasan Dimsa",
+  "SMKN 1 Bondowoso",
 ];
-
-export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
-};

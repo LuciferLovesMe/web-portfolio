@@ -1,56 +1,40 @@
-import { EXPERIENCES } from "..";
-import { motion } from "framer-motion";
+import Section, { Tag } from "./SectionHeader";
+import { EXPERIENCES } from "../constants";
 
-const Experiences = () => {
-  return (
-    <div className="pb-4">
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
-      >
-        Experiences
-      </motion.h2>
-      <div>
-        {EXPERIENCES.map((experience, index) => (
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -100 }}
-            transition={{ duration: 1 }}
-            key={index}
-            className="mb-4 flex flex-wrap lg:justify-center"
-          >
-            <div className="w-full lg:w-1/4">
-              <p className="mb-2 text-sm text-stone-400">{experience.year}</p>
-            </div>
-            <motion.div
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: -100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
-            >
-              <h3 className="mb-2 font-semibold">
-                {experience.role} -{" "}
-                <span className="text-sm text-stone-300">
-                  {experience.company}
-                </span>
-              </h3>
-              <p className="mb-4 text-stone-400">{experience.description}</p>
-              {experience.technologies.map((tech, index) => (
-                <span
-                  className="mr-2 mt-4 rounded bg-stone-900 px-2 py-2 font-medium text-stone-300"
-                  key={index}
-                >
-                  {tech}
-                </span>
+const Experiences = () => (
+  <Section id="experience" index="04" label="Work History" title="Experience">
+    <div className="divide-y divide-line overflow-hidden rounded-md border border-line">
+      {EXPERIENCES.map((e) => (
+        <div
+          key={`${e.company}-${e.period}`}
+          className="grid md:grid-cols-[18rem_1fr] md:divide-x md:divide-line"
+        >
+          <div className="p-8 md:p-10">
+            <p className="label text-ink">{e.period}</p>
+            <p className="label mt-3 normal-case">{e.company}</p>
+          </div>
+          <div className="p-8 md:p-10">
+            <h3 className="text-xl font-bold tracking-tight text-ink">
+              {e.role}
+            </h3>
+            <ul className="mt-4 space-y-3 leading-relaxed text-muted">
+              {e.points.map((pt) => (
+                <li key={pt} className="flex gap-3">
+                  <span>–</span>
+                  <span>{pt}</span>
+                </li>
               ))}
-            </motion.div>
-          </motion.div>
-        ))}
-      </div>
+            </ul>
+            <ul className="mt-8 flex flex-wrap gap-2">
+              {e.technologies.map((t) => (
+                <Tag key={t}>{t}</Tag>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
     </div>
-  );
-};
+  </Section>
+);
 
 export default Experiences;

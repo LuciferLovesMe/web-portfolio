@@ -1,10 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: "Inter", sans-serif;
-  background: #000;
+  font-family: "Geist", ui-sans-serif, system-ui, sans-serif;
+  background: #faf9f6;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: #faf9f6;
+  color: #09090b;
+}
+
+::selection {
+  background: #fde047;
+  color: #18181b;
+}
+
+@layer components {
+  /* Highlighter-style emphasis used on headline keywords */
+  .mark {
+    background: linear-gradient(transparent 58%, #fde047 58%, #fde047 94%, transparent 94%);
+    padding: 0 0.08em;
+    color: inherit;
+  }
+  .label {
+    @apply font-mono text-xs font-medium uppercase tracking-wider text-muted;
+  }
+  /* page rhythm: horizontal gutter and vertical section spacing */
+  .gutter {
+    @apply px-6 sm:px-10 lg:px-16;
+  }
+  .section-y {
+    @apply py-24 md:py-32;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
