@@ -8,7 +8,7 @@ export const PROFILE = {
   focus: "Business Systems, Web Apps, & AI Dev",
   timezone: "Asia/Jakarta",
   email: "mmalikibrahim666@gmail.com",
-  resume: "/cv_maulana.pdf",
+  resume: "/CV%20MAULANA%20MALIK%20IBRAHIM.pdf",
   github: "https://github.com/LuciferLovesMe",
   linkedin: "https://www.linkedin.com/in/maulana-malik-ibrahim-7b4539216/",
   instagram: "https://www.instagram.com/abeemm666/",
@@ -70,24 +70,20 @@ export const STACK_GROUPS = [
 
 export const EXPERIENCES = [
   {
-    period: "May 2022 — Present",
+    period: "June 2026 — Present",
     role: "Full Stack Developer",
-    company: "Freelance",
+    company: "PT. Univerz Teknologi Utama",
     points: [
-      "Designed and developed web, desktop, and Android applications using Next.js, Laravel, C#, and VB.Net.",
-      "Worked closely with frontend developers to integrate backend components.",
+      "Architected and developed core Enterprise Resource Planning (ERP) modules across finance, inventory, and operations to streamline cross-departmental business workflows.",
+      "Engineered secure RESTful APIs and optimized relational database schemas (MySQL) with Laravel to maintain high data integrity for high-volume enterprise transactions.",
+      "Built responsive, user-friendly frontend interfaces utilizing React, translating complex operational workflows into intuitive dashboards and interactive data tables.",
+      "Collaborated with cross-functional teams to translate complex business rules into scalable, maintainable software architectures and reliable data pipelines.",
     ],
     technologies: [
       "Laravel",
-      "Next.js",
+      "React.js",
       "MySQL",
-      "PostgreSQL",
-      "Android",
-      "C#.Net",
-      "ASP.Net",
-      "Vue.js",
-      "Python",
-      "Express.js",
+      "Accounting"
     ],
   },
   {
@@ -95,7 +91,9 @@ export const EXPERIENCES = [
     role: "Intern",
     company: "PT. Ina Gata Persada (Inagata Technosmith)",
     points: [
-      "Designed and developed web applications using Laravel, PostgreSQL, and VueJS.",
+      "Developed and maintained custom software solutions tailored to diverse corporate client requirements.",
+      "Translated UI/UX designs into responsive and interactive frontend interfaces utilizing Vue.JS.",
+      "Engineered robust RESTful APIs with Laravel to facilitate seamless data exchange between server-side logic and client applications.",
     ],
     technologies: ["Vue.js", "Laravel", "MySQL", "PostgreSQL", "TailwindCSS"],
   },
@@ -104,7 +102,8 @@ export const EXPERIENCES = [
     role: "AI Engineer Bootcamp",
     company: "Dicoding × DBS Foundation (Coding Camp)",
     points: [
-      "Participated in the AI Engineer track of Coding Camp powered by DBS Foundation and Dicoding.",
+      "Completed an intensive AI Engineering Bootcamp, developing practical expertise in Machine Learning, Deep Learning, and Data Science methodologies.",
+      "Built and trained predictive models utilizing Python, enhancing analytical problem-solving skills and expanding technical versatility beyond traditional web development.",
     ],
     technologies: ["Python", "Machine Learning", "Data Science", "Deep Learning"],
   },
@@ -112,7 +111,7 @@ export const EXPERIENCES = [
     period: "Aug 2024 — Dec 2024",
     role: "Intern",
     company: "BRIN & Datains",
-    points: ["Designed and developed web applications using Next.js."],
+    points: ["Built and optimized modern web applications utilizing Next.js, focusing on performance rendering and seamless user experience."],
     technologies: ["Next.js", "MySQL", "PostgreSQL"],
   },
   {
@@ -120,8 +119,9 @@ export const EXPERIENCES = [
     role: "Backend Developer",
     company: "PT. Barouk Raya Teknologi",
     points: [
-      "Developed company web applications using Laravel and MySQL.",
-      "Worked closely with frontend engineers and mobile developers to deliver a fully functional app.",
+      "Developed and deployed core software solutions specific to banking operations for Bank BPR UMKM Jawa Timur.",
+      "Architected secure backend systems and RESTful APIs using Laravel, implementing strict data validation and secure authentication logic.",
+      "Collaborated closely with cross-functional teams to integrate complex server-side functionalities with intuitive user-facing elements.",
     ],
     technologies: ["Laravel", "REST API", "AJAX", "JavaScript"],
   },
@@ -130,8 +130,8 @@ export const EXPERIENCES = [
     role: "Intern Backend Developer",
     company: "JV. Partner Indonesia",
     points: [
-      "Developed and maintained web applications using Laravel.",
-      "Helped build the TukangIndonesia application.",
+      "Contributed to the development and feature enhancement of web applications using the Laravel framework.",
+      "Actively participated in peer code reviews, providing technical feedback to optimize code quality, maintainability, and system performance.",
     ],
     technologies: ["PHP", "Laravel", "AJAX", "MySQL"],
   },
