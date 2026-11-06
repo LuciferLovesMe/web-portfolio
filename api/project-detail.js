@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
     const n = projects.length;
     const brief = ({ slug, title }) => ({ slug, title });
 
-    res.setHeader("Cache-Control", "s-maxage=300, stale-while-revalidate=300");
+    res.setHeader("Cache-Control", "s-maxage=60, stale-while-revalidate=60");
     res.status(200).json({
       project,
       blocks,

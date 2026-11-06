@@ -6,9 +6,8 @@ import { SourceNotice } from "../components/FeaturedProjects";
 import { getCover, getCoverCaption, getGallery } from "../data/projects";
 import { useProjectDetail } from "../data/useProjectDetail";
 
-// Image heights: one for the main visual, one shared by every gallery image.
+// Height of the main visual; gallery images size themselves (see section 5).
 const COVER_HEIGHT = "h-72 sm:h-96 lg:h-[32rem]";
-const GALLERY_HEIGHT = "h-56 sm:h-72";
 
 const MetaCell = ({ label, children }) => (
   <div className="p-6 sm:px-10">
@@ -187,7 +186,7 @@ const CaseStudy = () => {
       {/* 3. primary visual */}
       {getCover(p) && (
       <figure className="border-b border-line gutter py-12">
-        <div className="overflow-hidden rounded-md border border-line bg-white">
+        <div className="flex items-center justify-center rounded-none border border-neutral-200 bg-neutral-100/40 p-4">
           <img
             src={getCover(p)}
             alt={`${p.title} main screen`}
@@ -262,11 +261,11 @@ const CaseStudy = () => {
       {gallery.length > 0 && (
         <section className="border-b border-line gutter py-12">
           <h2 className="label mb-5">Feature Gallery</h2>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
             {gallery.map((g) => (
               <figure key={g.src}>
-                <div className="overflow-hidden rounded-md border border-line bg-white">
-                  <img src={g.src} alt={g.caption} loading="lazy" className={`${GALLERY_HEIGHT} w-full object-cover object-top`} />
+                <div className="flex items-center justify-center rounded-none border border-neutral-200 bg-neutral-100/40 p-4">
+                  <img src={g.src} alt={g.caption} loading="lazy" className="mx-auto max-h-[520px] w-auto max-w-full object-contain shadow-sm" />
                 </div>
                 <figcaption className="label mt-2">{g.caption}</figcaption>
               </figure>
