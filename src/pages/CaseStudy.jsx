@@ -6,9 +6,6 @@ import { SourceNotice } from "../components/FeaturedProjects";
 import { getCover, getCoverCaption, getGallery } from "../data/projects";
 import { useProjectDetail } from "../data/useProjectDetail";
 
-// Height of the main visual; gallery images size themselves (see section 5).
-const COVER_HEIGHT = "h-72 sm:h-96 lg:h-[32rem]";
-
 const MetaCell = ({ label, children }) => (
   <div className="p-6 sm:px-10">
     <dt className="label">{label}</dt>
@@ -186,11 +183,11 @@ const CaseStudy = () => {
       {/* 3. primary visual */}
       {getCover(p) && (
       <figure className="border-b border-line gutter py-12">
-        <div className="flex items-center justify-center rounded-none border border-neutral-200 bg-neutral-100/40 p-4">
+        <div className="flex min-h-[360px] max-h-[640px] w-full items-center justify-center overflow-hidden border border-neutral-200 bg-neutral-100/50 p-4 sm:p-8">
           <img
             src={getCover(p)}
             alt={`${p.title} main screen`}
-            className={`${COVER_HEIGHT} w-full object-cover object-top`}
+            className="mx-auto h-auto max-h-[580px] w-auto max-w-full object-contain shadow-sm"
           />
         </div>
         <figcaption className="label mt-3">

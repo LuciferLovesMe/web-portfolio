@@ -56,7 +56,9 @@ const sortKey = (period) => {
 const toProject = (page) => {
   const p = page.properties;
   const period = text(p["Period"]);
-  const cover = files(p["Cover"])[0];
+  // Cover column first, then the Notion page cover (file or external); "" if neither.
+  const cover =
+    files(p["Cover"])[0] || page.cover?.file?.url || page.cover?.external?.url || "";
   const gallery = files(p["Gallery"]);
   const context = text(p["Context"]);
   const summary = text(p["Summary"]);
